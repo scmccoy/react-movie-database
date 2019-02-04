@@ -1,0 +1,33 @@
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+
+// const welcome = "Welcome yo";
+
+class App extends Component {
+  submit = () => {
+    console.log("click", this.text.value);
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <Welcome text="Welcome to Props" />
+          <input type="text" ref={input => (this.text = input)} />
+          <button onClick={this.submit}>Show Value</button>
+        </header>
+      </div>
+    );
+  }
+}
+
+class Welcome extends Component {
+  render() {
+    const { text } = this.props;
+    return <h1>{text}</h1>;
+  }
+}
+
+export default App;
