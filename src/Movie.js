@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Movie extends Component {
   static propTypes = {
     movie: PropTypes.shape({
       title: PropTypes.string.isRequired,
-      desc: PropTypes.string
-    })
+      desc: PropTypes.string,
+    }),
   };
 
   render() {
