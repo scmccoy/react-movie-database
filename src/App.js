@@ -6,8 +6,8 @@ import {
   Switch,
   Link,
 } from 'react-router-dom';
-import MoviesList from './MoviesList';
-import MovieDetails from './MovieDetails';
+import MoviesList from './components/MoviesList';
+import MovieDetails from './components/MovieDetails';
 import './App.css';
 
 const App = () => (
